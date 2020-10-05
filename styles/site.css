@@ -1,0 +1,163 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f3f9d2; 
+}
+
+body::-webkit-scrollbar {
+    width: 0.30rem;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #2d3142;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: #028090;
+}
+
+a button{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color:  #028090;
+    color: #f3f9d2;
+    flex-shrink: 0;
+}
+
+nav{
+    background:   #028090;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: #f3f9d2;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: 700;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f3f9d2;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+nav ul li a button{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 5px;
+    border-color: #f3f9d2;
+    border: 1px solid;
+}
+
+.ativa:focus,
+.ativa:hover{
+    background: #03c4dd;
+    transition: 0.5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #f3f9d2;;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2d3142;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    .ativa:focus, .ativa:hover{
+        background-color: transparent;
+        color: #03c4dd;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+@media(max-width: 425px){
+    label.logo{
+        font-size: 22px;
+        padding: 0 80px 0 30px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+}

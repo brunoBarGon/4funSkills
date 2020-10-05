@@ -1,0 +1,93 @@
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.mission h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+.mission p{
+    margin: 25px 0 25px 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.mission{
+    display: flex;
+    background: url(/assets/mission.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.history h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 100px;
+}
+
+.history p{
+    margin: 25px 0 25px 0;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+.contact{
+    display: flex;
+    background: url(/assets/contact.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.contact p{
+    margin: 25px 0 25px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.contact button{
+    width: 180px;
+    height: 60px;
+    background-color: #028090;
+    color: #fff;
+    margin-bottom: 100px;
+    font: 700 1rem 'Montserrat';
+    border: none;
+    border-radius: 8px;
+}
+
+.contact button:hover{
+    background-color: #fff;
+    color: #028090;
+    transition: .5s;
+
+}
+
+.contact button:focus{
+    outline: none;
+}

@@ -1,0 +1,103 @@
+.container{
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero-img{
+    display: flex;
+    background: url(/assets/skills-hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    flex-direction: column;
+    
+}
+
+.call-action{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f3f9d2;
+    margin: 420px 0 0 50px;
+}
+
+.cadastrobtn{
+    color: #f3f9d2;
+    background-color:  #028090;
+    width: 160px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    font: 700 1.2rem 'Montserrat';
+    margin: 15px 0 0 50px;
+}
+
+.cadastrobtn:focus,
+.cadastrobtn:hover{
+    color:  #D61858;
+    background-color: #f3f9d2;
+    transition: .5s;
+    cursor: pointer;
+}
+
+@media(max-width: 952px){
+    .call-action{
+        font-size: 1.6rem;
+        margin-top: 410px;
+    }
+
+    .cadastrobtn{
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        font: 700 1.0rem 'Montserrat';
+        margin: 15px 0 0 50px;
+    }
+}
+
+@media(max-width: 858px){
+
+    .call-action{
+        font-size: 1.4rem;
+        margin-top: 375px;
+    }
+
+    .cadastrobtn{
+        width: 140px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        font: 700 1.0rem 'Montserrat';
+        margin: 20px 0 0 50px;
+    }
+
+}
+
+@media(max-width: 425px){
+
+    .call-action{
+        font-size: 1.2rem;
+        margin-top: 350px;
+    }
+
+    .cadastrobtn{
+        width: 120px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+        font: 700 1.0rem 'Montserrat';
+        margin: 10px 0 0 50px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+}
+
+
+
