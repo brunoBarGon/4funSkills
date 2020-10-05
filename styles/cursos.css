@@ -76,6 +76,11 @@
     transition: 0.5s;
 }
 
+.cadastrobtn:focus,
+.loginbtn:focus{
+    outline: none;
+}
+
 .courses{
     width: 80%;
     position: relative;
