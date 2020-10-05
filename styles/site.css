@@ -114,7 +114,7 @@ nav ul li a button{
 
 }
 
-@media(max-width: 858px){
+@media(max-width: 768px){
     .checkbtn{
         display: block;
     }

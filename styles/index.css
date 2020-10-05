@@ -36,12 +36,15 @@
     margin: 15px 0 0 50px;
 }
 
-.cadastrobtn:focus,
 .cadastrobtn:hover{
     color:  #D61858;
     background-color: #f3f9d2;
     transition: .5s;
     cursor: pointer;
+}
+
+.cadastrobtn:focus{
+    outline: none;
 }
 
 @media(max-width: 952px){
@@ -60,7 +63,7 @@
     }
 }
 
-@media(max-width: 858px){
+@media(max-width: 768px){
 
     .call-action{
         font-size: 1.4rem;
@@ -82,7 +85,7 @@
 
     .call-action{
         font-size: 1.2rem;
-        margin-top: 350px;
+        margin-top: 400px;
     }
 
     .cadastrobtn{
